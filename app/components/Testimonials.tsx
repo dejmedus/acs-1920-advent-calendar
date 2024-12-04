@@ -30,7 +30,7 @@ export default function Testimonials() {
   return (
     <section className="my-8 typo wide">
       <h3>What our users are saying</h3>
-      <div className="gap-4 grid grid-cols-2 w-full">
+      <div className="gap-4 grid md:grid-cols-2 w-full">
         {testimonials.map((testimonial, index) => (
           <Testimonial
             key={index}
@@ -45,7 +45,7 @@ export default function Testimonials() {
 
 function Testimonial({ author, content }: { author: string; content: string }) {
   return (
-    <div className="shadow-xl h-fit card">
+    <div className="shadow h-fit card">
       <div className="card-body">
         <p className="card-title">&quot;{content}&quot;</p>
         <p className="self-end">-{author}</p>

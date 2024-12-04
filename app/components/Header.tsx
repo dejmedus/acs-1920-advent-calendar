@@ -4,23 +4,37 @@ export default function Header() {
   const pathname: string = useLocation().pathname;
 
   return (
-    <header className="flex justify-between bg-white px-4 navbar">
-      {/* <Link to="/" className="w-1/4"> */}
-      <Link to="/">
-        <h1 className="text-lg btn btn-ghost">E-Advent Calendars</h1>
-      </Link>
-
-      {/* <nav className="flex-1 justify-center"> */}
-      <nav className="flex-none">
-        <ul className="md:flex gap-2 hidden menu menu-horizontal">
+    <div className="bg-base-100 navbar">
+      <div className="flex-1">
+        <Link to="/">
+          <h1 className="text-lg btn btn-ghost">E-Advent Calendars</h1>
+        </Link>
+      </div>
+      <div className="flex-none">
+        <ul className="md:flex gap-2 hidden px-1 menu menu-horizontal">
           <NavLink path="/" name="About" location={pathname} />
           <NavLink path="/pricing" name="Pricing" location={pathname} />
           <NavLink path="/build" name="Build A Calendar" location={pathname} />
         </ul>
-        <div className="md:hidden">LINKS</div>
-      </nav>
-      {/* <span className="w-1/4"></span> */}
-    </header>
+
+        <ul className="md:hidden px-1 menu menu-horizontal">
+          <li>
+            <details>
+              <summary></summary>
+              <ul className="bg-base-100 p-2 rounded-t-none">
+                <NavLink path="/" name="About" location={pathname} />
+                <NavLink path="/pricing" name="Pricing" location={pathname} />
+                <NavLink
+                  path="/build"
+                  name="Build A Calendar"
+                  location={pathname}
+                />
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
 
