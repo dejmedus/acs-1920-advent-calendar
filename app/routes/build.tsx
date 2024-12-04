@@ -14,7 +14,7 @@ export default function Index() {
   return (
     <main>
       <SubPageHeader title="Create your Calendar" />
-      <Form></Form>
+      <Form />
     </main>
   );
 }
