@@ -4,9 +4,30 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+main {
+  min-height: 85vh;
+}
+
+footer {
+  @apply h-[70px] mt-12;
+}
+
+.center {
+  @apply flex justify-center items-center;
+}
+
+.center-grid {
+  @apply flex flex-col justify-center items-center;
+}
+
+.typo {
+  @apply prose md:max-w-[75%] max-w-[90%] lg:max-w-[900px] mx-auto;
+}
+
+.wide {
+  @apply md:w-[75%] w-[90%] lg:w-[900px] mx-auto;
 }
