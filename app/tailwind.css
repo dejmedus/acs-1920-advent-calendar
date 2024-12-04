@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  list-style: none;
+}
+
 html,
 body {
   @media (prefers-color-scheme: dark) {
@@ -9,11 +13,38 @@ body {
   }
 }
 main {
-  min-height: 85vh;
+  @apply min-h-[85vh];
+}
+section {
+  @apply py-8;
+}
+h3 {
+  @apply font-semibold text-xl my-6;
+}
+input,
+textarea {
+  @apply text-neutral-700;
+}
+footer {
+  @apply h-[70px];
 }
 
-footer {
-  @apply h-[70px] mt-12;
+.cards .card {
+  @apply bg-red-900 text-neutral-200;
+
+  a {
+    @apply bg-neutral-200 text-neutral-700;
+  }
+}
+.cards .card:nth-child(1) {
+  @apply bg-lime-800;
+}
+
+.step-numbers li span {
+  @apply text-red-700;
+}
+.step-numbers li:nth-child(2) span {
+  @apply text-lime-800;
 }
 
 .center {

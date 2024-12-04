@@ -12,7 +12,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main>
+    <main className="bg-lime-800 text-white">
       <SubPageHeader title="Create your Calendar" />
       <Form />
     </main>

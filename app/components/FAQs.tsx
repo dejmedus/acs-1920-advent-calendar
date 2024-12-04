@@ -30,7 +30,7 @@ const faqs = [
 
 export default function FAQs() {
   return (
-    <section className="typo">
+    <section className="wide">
       <h3>FAQs</h3>
       <div className="gap-4 grid">
         {faqs.map((faq, index) => (
@@ -58,7 +58,7 @@ function FAQ({
   return (
     <div
       tabIndex={index}
-      className="bg-base-200 border border-base-300 collapse collapse-arrow"
+      className="bg-base-200 border border-base-300 text-neutral-700 collapse collapse-arrow"
     >
       <div className="font-medium text-xl collapse-title">{question}</div>
       <div className="collapse-content">

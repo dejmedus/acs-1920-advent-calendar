@@ -58,7 +58,7 @@ function ToggleEl({
     <div className="flex justify-between items-center w-full max-w-lg">
       <label htmlFor={name} className="grid label">
         {formatTitle(name)}
-        <span>{desc}</span>
+        <span className="opacity-75">{desc}</span>
       </label>
       {children}
     </div>

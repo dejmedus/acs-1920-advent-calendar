@@ -18,9 +18,11 @@ export default function Index() {
     <main>
       <Hero />
       <How />
-      <Testimonials />
-      <CallToAction />
-      <FAQs />
+      <div className="bg-lime-800 w-full text-neutral-200">
+        <Testimonials />
+        <CallToAction />
+        <FAQs />
+      </div>
     </main>
   );
 }

@@ -2,22 +2,17 @@ const testimonials = [
   {
     author: "Emily W.",
     content:
-      "I absolutely loved the e-advent calendar! Each day felt like a little surprise waiting to brighten my morning. The variety of content—recipes, quizzes, and even small gifts—was incredible. I can't wait to use it again next year!",
+      "I absolutely loved the e-advent calendar! Each day felt like a little surprise waiting to brighten my morning.",
   },
   {
     author: "David L.",
     content:
-      "The e-advent calendar made the holiday season even more special for our family. The digital format was so convenient, and the daily surprises were unique and fun. Highly recommend it to anyone looking to add extra cheer to their December!",
+      "The e-advent calendar made the holiday season even more special for our family.  Highly recommend it to anyone looking to add extra cheer to their December!",
   },
   {
     author: "Sarah P.",
     content:
-      "As someone with a packed schedule, this e-advent calendar was a game-changer. It brought a bit of joy and relaxation to my day without needing to carve out extra time. Perfect for anyone who loves the holidays but is short on time!",
-  },
-  {
-    author: "Michael T.",
-    content:
-      "Who knew an online advent calendar could be so engaging? I loved the mix of interactive content and festive surprises. It's a fresh take on a classic tradition—brilliant idea!",
+      "As someone with a packed schedule, this e-advent calendar was a game-changer.  Perfect for anyone who loves the holidays but is short on time!",
   },
   {
     author: "Sophie R.",
@@ -28,7 +23,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="my-8 typo wide">
+    <section className="wide">
       <h3>What our users are saying</h3>
       <div className="gap-4 grid md:grid-cols-2 w-full">
         {testimonials.map((testimonial, index) => (
@@ -45,10 +40,10 @@ export default function Testimonials() {
 
 function Testimonial({ author, content }: { author: string; content: string }) {
   return (
-    <div className="shadow h-fit card">
+    <div className="bg-white shadow h-fit text-neutral-800 card">
       <div className="card-body">
-        <p className="card-title">&quot;{content}&quot;</p>
-        <p className="self-end">-{author}</p>
+        <p className="font-medium card-title">&quot;{content}&quot;</p>
+        <span className="font-sm text-lg self-end"> - {author}</span>
       </div>
     </div>
   );

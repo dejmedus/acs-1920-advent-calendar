@@ -19,7 +19,7 @@ const tiers = [
 
 export default function Pricing() {
   return (
-    <section className="flex gap-2 wide">
+    <section className="flex gap-2 cards wide">
       {tiers.map((tier, index) => {
         const { name, description, cost, path } = tier;
         return (
@@ -48,7 +48,7 @@ function Card({
   path: string;
 }) {
   return (
-    <div className="bg-base-100 shadow card">
+    <div className="bg-base-100 shadow text-neutral-700 card">
       <div className="items-center text-center card-body">
         <h2 className="card-title">{name}</h2>
         <h3 className="my-2 font-extrabold text-4xl">${cost}</h3>
