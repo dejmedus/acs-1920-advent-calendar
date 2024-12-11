@@ -13,10 +13,13 @@ body {
   }
 }
 main {
-  @apply min-h-[85vh];
+  @apply min-h-[85vh] pb-20;
 }
 section {
   @apply py-8;
+}
+form {
+  @apply space-y-4;
 }
 h3 {
   @apply font-semibold text-xl my-6;
