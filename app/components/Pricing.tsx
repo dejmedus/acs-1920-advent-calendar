@@ -54,7 +54,10 @@ function Card({
         <h3 className="my-2 font-extrabold text-4xl">${cost}</h3>
         <p className="my-2 max-w-[50ch]">{description}</p>
         <div className="flex w-full card-actions">
-          <Link to={path} className="w-full btn btn-neutral">
+          <Link
+            to={path}
+            className="border-none w-full hover:text-lg btn btn-neutral"
+          >
             Choose
           </Link>
         </div>
