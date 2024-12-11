@@ -42,7 +42,9 @@ function Testimonial({ author, content }: { author: string; content: string }) {
   return (
     <div className="bg-white shadow h-fit text-neutral-800 card">
       <div className="card-body">
-        <p className="font-medium card-title">&quot;{content}&quot;</p>
+        <p className="font-medium card-title hover:scale-105">
+          &quot;{content}&quot;
+        </p>
         <span className="font-sm text-lg self-end"> - {author}</span>
       </div>
     </div>

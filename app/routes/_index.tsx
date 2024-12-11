@@ -15,14 +15,14 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main>
-      <Hero />
-      <How />
-      <div className="bg-lime-800 w-full text-neutral-200">
-        <Testimonials />
-        <CallToAction />
-        <FAQs />
+    <main className="bg-lime-800 w-full text-neutral-200">
+      <div className="bg-white w-full text-black">
+        <Hero />
+        <How />
       </div>
+      <Testimonials />
+      <CallToAction />
+      <FAQs />
     </main>
   );
 }
